@@ -1,0 +1,42 @@
+@import "~assets/styles/index.scss";
+
+$menu-active: #4a90e2;
+$menu: #f1f1f1;
+$menu-border: #ddd;
+
+.menu {
+  /*! keep */
+  &__list {
+    /*! keep */
+    $class: &;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        background: $menu-active;
+        color: $white;
+      }
+    }
+  }
+
+  &__link {
+    background: $menu;
+    border-bottom: 1px solid $menu-border;
+    display: block;
+    padding: 12px;
+
+    $class: &;
+
+    &:link,
+    &:visited {
+      color: #000;
+    }
+
+    &--active#{$class} {
+      background: $menu-active;
+      color: $white;
+    }
+  }
+}

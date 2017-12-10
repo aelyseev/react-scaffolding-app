@@ -1,0 +1,14 @@
+credentials:
+  login: Winston
+  password: Churchill
+
+user:
+  login:
+    response:
+      token: '123'
+      description: 'British statesman, army officer, and writer'
+      profile:
+        id: 1
+        email: 'winston@government.uk'
+        firstName: 'Winston'
+        lastName: 'Churchill'

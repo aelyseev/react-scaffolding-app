@@ -1,0 +1,36 @@
+.table {
+  /* keep */
+
+  &__row {
+    font-size: 0.9em;
+    padding: 8px 0 4px;
+
+    &--header {
+      border-bottom: 1px solid #999;
+      font-size: 1em;
+      font-weight: 700;
+    }
+
+    &--data {
+      border-bottom: 1px dotted #ccc;
+
+      button {
+        visibility: hidden;
+      }
+
+      &:hover {
+        background: #f1f1f1;
+        cursor: pointer;
+
+        button {
+          visibility: visible;
+        }
+      }
+    }
+
+    div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
